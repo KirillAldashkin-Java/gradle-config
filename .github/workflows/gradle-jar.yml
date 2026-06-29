@@ -7,4 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - run: gradle jar --no-daemon
+      - env:
+          JAVA_OPTS: -Xmx10g -Xms4g
+          GRADLE_OPTS: -Xmx10g -Xms4g
+        run: |
+          echo "org.gradle.jvmargs=-Xmx10g -Xms4g" > gradle.properties
+          gradle jar --no-daemon
