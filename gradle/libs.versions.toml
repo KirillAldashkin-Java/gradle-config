@@ -1,0 +1,5 @@
+[libraries]
+kotlin-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version = "2.4.0" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version = "2.4.0" }
+poet-java = { group = "com.palantir.javapoet", name = "javapoet", version = "0.17.0" }
+poet-kotlin = { group = "com.squareup", name = "kotlinpoet", version = "2.3.0" }
