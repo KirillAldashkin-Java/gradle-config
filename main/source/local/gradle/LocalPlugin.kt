@@ -9,7 +9,6 @@ import local.gradle.runner.generator
 class LocalPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.plugins.apply("org.jetbrains.kotlin.jvm")
-        target.plugins.apply("maven-publish")
 
         target.repositories.mavenCentral()
         target.dependencies.add("testImplementation", DepVersions["kotlin-test"])
