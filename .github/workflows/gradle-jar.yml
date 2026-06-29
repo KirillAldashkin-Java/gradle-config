@@ -12,4 +12,4 @@ jobs:
           GRADLE_OPTS: -Xmx10g -Xms4g
         run: |
           echo "org.gradle.jvmargs=-Xmx10g -Xms4g" > gradle.properties
-          gradle jar --no-daemon
+          gradle classes --no-daemon
